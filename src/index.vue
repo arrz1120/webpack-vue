@@ -1,13 +1,12 @@
-<style lang="scss">
-
-</style>
-
 <template>
-  <section class="app"></section>
+  <section>
+
+  </section>
 </template>
 
 <script>
-export default {
-  name: 'App',
-}
+  import './assets/sass/index.scss'
+  export default {
+    name: 'index',
+  }
 </script>
