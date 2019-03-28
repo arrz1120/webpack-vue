@@ -1,4 +1,5 @@
 import jsonp from 'jsonp'
+import wx from 'weixin-js-sdk'
 
 let shareConf={
   originUrl:window.location.href.split('#')[0],

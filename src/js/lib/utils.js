@@ -1,6 +1,6 @@
 module.exports={
   rem(px){
-    const rem=mobileUtils.rem
+    const rem=adapter.rem
     const ratio=16/750
     return px*ratio*rem
   },

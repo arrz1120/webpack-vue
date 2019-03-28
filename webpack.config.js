@@ -46,7 +46,7 @@ module.exports={
        // sass
        {
         test:/\.(scss|css)$/,
-        exclude:[/node_modules/],
+        // exclude:[/node_modules/],
         use:[
           {
             loader:MiniCssExtractPlugin.loader,
@@ -91,6 +91,7 @@ module.exports={
       // media
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        exclude:[/node_modules/],
         loader: 'url-loader',
         options: {
           context:'./src/assets',
@@ -123,7 +124,7 @@ module.exports={
     // 提取 css
     new MiniCssExtractPlugin({
       filename: 'css/[name].css?[contenthash:8]',
-      chunkFilename: 'css/[name].[id].css?[contenthash:8]'
+      chunkFilename: 'css/[name].css?[contenthash:8]'
     }),
 
     // 复制文件
